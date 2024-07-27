@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+""" 2-hypermedia_pegination module """
+
+
 import csv
 import math
 from typing import List, Dict
