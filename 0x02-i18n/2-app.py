@@ -28,10 +28,10 @@ def get_locale() -> str:
 
 
 @app.route('/')
-def index():
+def index() -> str:
     """Default root
     """
-    return render_template('index.html')
+    return render_template('2-index.html')
 
 
 if __name__ == '__main__':
