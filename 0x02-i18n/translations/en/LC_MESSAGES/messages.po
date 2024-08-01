@@ -1,5 +1,0 @@
-msgid "home_title"
-msgstr "Welcome to Holberton"
-
-msgid "home_title"
-msgstr "Welcome to Holberton"
