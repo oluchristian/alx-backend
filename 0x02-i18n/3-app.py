@@ -27,6 +27,12 @@ def get_locale() -> str:
     return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
+@app.context_processor
+def inject_locale():
+    """Inject locale into the function"""
+    return dict(get_locale=get_locale)
+
+
 @app.route('/')
 def index() -> str:
     """Default root
