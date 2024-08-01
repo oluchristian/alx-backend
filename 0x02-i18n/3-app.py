@@ -24,7 +24,7 @@ babel = Babel(app)
 def get_locale() -> str:
     """Get locale function
     """
-    return request.accept_languages.best_match(app.config)
+    return request.accept_languages.best_match(app.config['LANGUAGES'])
 
 
 @app.route('/')
